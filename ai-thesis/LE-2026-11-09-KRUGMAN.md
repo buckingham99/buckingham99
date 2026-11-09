@@ -42,7 +42,7 @@
 
 - **No state change.** Financing_Availability 8 HELD (BORDERLINE); Capital Reflexivity Stage 4 unchanged; Composite SUSPENDED; all other scores unchanged.
 - **Proposed annotations (author):**
-  1. Consider a **macro-transmission watch** (no weight yet), keyed to primary series: (a) IPE+software / GDP falls q/q (first sign of a capex rollover); (b) prime-age EPOP falls ≥0.5pt from 80.7 over 3 months; (c) equities / GDP (Z.1, Q3-26 due ~Dec) falls >15% from 380%. A trigger means "the bust has reached the real economy". It is separate from the financing gates.
+  1. **[APPLIED 2026-11-09 → MACRO-TRANSMISSION-01 v0.1, LE-2026-11-09-MACROWATCH]** Consider a **macro-transmission watch** (no weight yet), keyed to primary series: (a) IPE+software / GDP falls q/q (first sign of a capex rollover); (b) prime-age EPOP falls ≥0.5pt from 80.7 over 3 months; (c) equities / GDP (Z.1, Q3-26 due ~Dec) falls >15% from 380%. A trigger means "the bust has reached the real economy". It is separate from the financing gates.
   2. Record the **policy-space fact**: fed funds 3.88% vs 6.54% at the 2000 peak.
   3. Watch the RSP vs QQQ gap as the rotation-vs-cash test Krugman sets out (equal-weight holding up = rotation).
 - **DECISION: MONITOR ONLY / NO TRADE.**
