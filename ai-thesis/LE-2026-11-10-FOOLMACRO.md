@@ -38,9 +38,9 @@
 
 - **No state change.** MACRO-TRANSMISSION-01 v0.1 stays **QUIET / ZERO WEIGHT** (no limb read is due before Nov 25). Financing_Availability 8 HELD (BORDERLINE); Capital Reflexivity Stage 4 unchanged; Composite SUSPENDED; all other scores unchanged.
 - **Proposed annotations (author):**
-  1. Add to the MACRO-TRANSMISSION-01 §6 policy-space reference: *"Last FOMC move: +25bp to 3.75–4.00% on 2026-09-17; headline CPI 4.02% y/y (Sep-26)."*
-  2. Consider a second side indicator for MACRO-TRANSMISSION-01 (not a limb, no fire): **10-year breakeven (DGS10 − DFII10) and 10s2s**. The baseline on 2026-11-06 is breakeven 2.23% and 10s2s +35bp. A breakeven above ~2.6% together with a steepening curve would mean the market has started pricing the debasement risk the article describes.
-  3. Open a lead (no record yet): match the Q3-26 goods-import surge to computer and semiconductor end-use categories, to close Krugman's import-leakage item.
+  1. **[APPLIED 2026-11-10 → MACRO-TRANSMISSION-01 v0.2 §6]** Add to the MACRO-TRANSMISSION-01 §6 policy-space reference: *"Last FOMC move: +25bp to 3.75–4.00% on 2026-09-17; headline CPI 4.02% y/y (Sep-26)."*
+  2. **[APPLIED 2026-11-10 → MACRO-TRANSMISSION-01 v0.2 §4, S2; thresholds ≥2.60% breakeven and ≥+60bp 10s2s, series T10YIE / T10Y2Y]** Consider a second side indicator for MACRO-TRANSMISSION-01 (not a limb, no fire): **10-year breakeven (DGS10 − DFII10) and 10s2s**. The baseline on 2026-11-06 is breakeven 2.23% and 10s2s +35bp. A breakeven above ~2.6% together with a steepening curve would mean the market has started pricing the debasement risk the article describes.
+  3. **[APPLIED 2026-11-10 → MACRO-TRANSMISSION-01 v0.2 §8, L1]** Open a lead (no record yet): match the Q3-26 goods-import surge to computer and semiconductor end-use categories, to close Krugman's import-leakage item.
 - **Reliability note:** treat Motley Fool macro figures as T3 and unverified until checked against primary data. This is the second Fool piece graded (after LE-2026-11-01-SNDK, which was accurate on company figures). This one misstated its headline index return.
 - **DECISION: MONITOR ONLY / NO TRADE.**
 

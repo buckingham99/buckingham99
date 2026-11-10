@@ -4,6 +4,7 @@
 - **Type:** Ledger entry. **New watch registered: RESEARCH ONLY / ZERO WEIGHT.** No score, node, limb or threshold of any existing control changed. **MONITOR ONLY / NO TRADE.**
 - **Touches:** new record MACRO-TRANSMISSION-01; cross-refs Financing_Availability (8, BORDERLINE), Capital Reflexivity Stage 4, Composite SUSPENDED (all unchanged).
 - **Standing rule:** PERSONAL-DATA-EXCLUSION-01.
+- **Amended 2026-11-10 → v0.2** at author instruction ("apply the three proposed annotations", LE-2026-11-10-FOOLMACRO §3). Changes: side indicator S2 added (§4), policy-space reference updated (§6), lead L1 opened (§8). **No limb, threshold or status changed; still ZERO WEIGHT.**
 
 ## 1. Purpose
 
@@ -29,9 +30,12 @@ The financing gates (Financing_Availability, HY-CREDIT-01, TW-VF-GUARANTEE-01) a
 - **ALERT:** two or more limbs fired within the same two-quarter window. Log a ledger entry and put to the author whether MACRO-TRANSMISSION-01 should get weight, and on which score. No automatic score change.
 - **Reset:** a limb clears when its series recovers to its baseline.
 
-## 4. Side indicator (not a limb)
+## 4. Side indicators (not limbs; they never fire)
 
-The rotation-vs-cash test (LE-2026-11-09-KRUGMAN annotation 3) is **RSP vs QQQ drawdown from peak** (Tiingo adjusted closes). It is noted on each read, but it does not fire. The 2026-11-06 reading was RSP −3.3% and QQQ −13.6% (rotation). If RSP falls by as much as QQQ, the selloff has become a move to cash, and the M3 limb is likely to follow.
+Both are noted on every limb read. Neither changes the status ladder.
+
+- **S1 Rotation vs cash** (LE-2026-11-09-KRUGMAN annotation 3): **RSP vs QQQ drawdown from peak** (Tiingo adjusted closes). The 2026-11-06 reading was RSP −3.3% and QQQ −13.6% (rotation). If RSP falls by as much as QQQ, the selloff has become a move to cash, and the M3 limb is likely to follow.
+- **S2 Debasement pricing** (added v0.2, LE-2026-11-10-FOOLMACRO annotation 2): FRED **T10YIE** (10-year breakeven inflation) and **T10Y2Y** (10-year minus 2-year Treasury). Baseline 2026-11-06: **breakeven 2.23%, 10s2s +35bp**. Year-end 2025: breakeven 2.25%, i.e. flat YTD. The 2026 rise in the 10-year has been real yield (DFII10 +73bp) with a flattening curve, i.e. Fed repricing. **Flag for the author** (no fire) when breakeven is **≥ 2.60%** and 10s2s is **≥ +60bp** (+25bp from baseline) on the same close. That pairing would mean the market has started pricing the "inflate the debt away" risk, not just a Fed response. The two thresholds were set by the session, not derived from data; the author may change them.
 
 ## 5. Initial read (2026-11-09)
 
@@ -48,6 +52,7 @@ The rotation-vs-cash test (LE-2026-11-09-KRUGMAN annotation 3) is **RSP vs QQQ d
 - Registered as RESEARCH ONLY / ZERO WEIGHT. All AI Thesis scores unchanged; Composite SUSPENDED.
 - LE-2026-11-09-KRUGMAN annotation 1 → **APPLIED** (this entry). Annotations 2 (policy-space fact) and 3 (RSP/QQQ) are carried here as §4 and below:
   - **Policy-space reference:** fed funds (DFF) 3.88% on 2026-11-05 vs 6.54% (FEDFUNDS, Jul-00). Room to zero ≈ 3.9pp vs 5.5pp used in 2001–03.
+  - **Policy-direction note (added v0.2, LE-2026-11-10-FOOLMACRO annotation 1):** last FOMC move was **+25bp to 3.75–4.00% on 2026-09-17** (DFEDTARU); headline CPI **4.02% y/y (Sep-26)** (CPIAUCSL). An AI bust now would meet a Fed tightening against an energy-led inflation shock, so the usable room is less than the 3.9pp level implies. Refresh the CPI figure after each CPI release (Oct-26 CPI out 2026-11-10).
 - **DECISION: MONITOR ONLY / NO TRADE.**
 
 ## 7. Read schedule (added 2026-11-09)
@@ -63,3 +68,9 @@ Release dates come from the FRED release calendar (`release/dates`: release_id 5
 | Thu 2027-01-28 11:00 | M1 | GDP Q4-26 advance | trig_01BYweykrXQ68g2Bu8VZRXnz | **Date not yet on the calendar** (usual late-Jan slot). The task confirms the date and reschedules itself if it is wrong |
 
 **Not yet scheduled:** M2 for Dec-26 jobs (early Jan 2027) and M3 for Z.1 Q4-26 (~Mar 2027). Schedule them once they appear on the FRED calendar.
+
+## 8. Open leads (added v0.2)
+
+| ID | Question | Why it matters | Data | Status |
+|---|---|---|---|---|
+| **L1** Import leakage | How much of the Q3-26 goods-import surge is computer and semiconductor equipment? Goods imports (A255RC1Q027SBEA) went from $3.24T (Q4-25) to **$4.02T SAAR (Q3-26), +24%**, while customs duties fell from $367B to $275B | If the AI capex share (M1) is mostly imported, a capex unwind takes less off domestic GDP than the gross share suggests. Closes the open Krugman item (LE-2026-11-09-KRUGMAN §1, "NOT VERIFIED") | Census end-use / HS detail: 8471 (computers), 8473 (parts), 8542 (ICs), 8517 (network equipment), monthly, Q4-25 to Sep-26. Census API key is set in the environment; not yet tried | **OPEN** (opened 2026-11-10, LE-2026-11-10-FOOLMACRO annotation 3). Not a limb; no record yet. On closure, log a ledger entry and propose whether M1 needs a net-of-imports variant |
