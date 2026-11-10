@@ -25,7 +25,7 @@
 | Valuations / GDP much higher this time | Same series: 321% (Q4-21), 346% (Q4-25), **380% (Q2-26)** — 1.8× the 2000 peak | **CONFIRMED** |
 | "Prices of hyperscaler stocks are down 27 percent since their peak" | Drawdown from peak (since 2025-06) to Nov 6: MSFT −4.5%, GOOGL −29.2%, AMZN −8.7%, META −22.5%, ORCL −64.1%. Equal-weight big four **−16.2%**; with ORCL **−25.8%** | **NOT REPRODUCED** for the big four; consistent only if Oracle is in the basket. Basket not named in the article |
 | Cost of default insurance on AI-company bonds "has soared" | Already in ledger: CRWV CDS ~903bp (Oct 12) → record 1,167bp (Oct 22), S&P series (LE-2026-11-01-FINGATE §4). Not re-retrieved | CONSISTENT with ledger, not re-checked |
-| Large share of AI capex is imported equipment (Korea, Taiwan) | Not checked against import data this session | NOT VERIFIED (plausible) |
+| Large share of AI capex is imported equipment (Korea, Taiwan) | Not checked against import data this session. **Update 2026-11-10 (LE-2026-11-10-L1IMPORTS):** Census HS data show computer imports ≈ 109% of NIPA computer investment; origins are Mexico 33%, Taiwan 26%, Vietnam 15%, Korea 7% | ~~NOT VERIFIED~~ → **CONFIRMED** (import share); origin mix PARTLY CONFIRMED |
 | Bernstein–Cummings: AI bust shock ~3× the dot-com bust | Op-ed not retrieved | NOT VERIFIED |
 
 **Overall grade:** the history and data are accurate. There are two date slips and one stale chart. The one current market figure (−27%) cannot be reproduced without knowing the basket.
