@@ -4,6 +4,8 @@
 - **Type:** Ledger entry. **New watch registered: RESEARCH ONLY / ZERO WEIGHT.** No score, node, limb or threshold of any existing control changed. **MONITOR ONLY / NO TRADE.**
 - **Touches:** new record MACRO-TRANSMISSION-01; cross-refs Financing_Availability (8, BORDERLINE), Capital Reflexivity Stage 4, Composite SUSPENDED (all unchanged).
 - **Standing rule:** PERSONAL-DATA-EXCLUSION-01.
+- **Amended 2026-11-10 → v0.2** at author instruction ("apply the three proposed annotations", LE-2026-11-10-FOOLMACRO §3). Changes: side indicator S2 added (§4), policy-space reference updated (§6), lead L1 opened (§8). **No limb, threshold or status changed; still ZERO WEIGHT.**
+- **Amended 2026-11-10 → v0.3** at author instruction ("apply both proposals", LE-2026-11-10-L1IMPORTS §4). Changes: M1 domestic-exposure line added (§2), side indicator S3 added (§4). **No limb, threshold or status changed; still ZERO WEIGHT.**
 
 ## 1. Purpose
 
@@ -21,6 +23,7 @@ The financing gates (Financing_Availability, HY-CREDIT-01, TW-VF-GUARANTEE-01) a
 - Z.1 equities are in $ millions; GDP is in $ billions. Ratio = equities / 1000 / GDP × 100.
 - M1 and M3 use the GDP vintage current on the read date. If the baseline is revised, carry the revised figure and note the revision.
 - Every read must cite the series ID, observation date and FRED `last_updated`.
+- **M1 domestic-exposure line (added v0.3, LE-2026-11-10-L1IMPORTS annotation 1).** Every M1 read records, next to the share, three figures: (a) **software / GDP** (B985RC1Q027SBEA ÷ GDP; **2.52%** in Q3-26 advance); (b) **equipment / GDP** (Y034RC1Q027SBEA ÷ GDP; 2.83%), with computers and peripherals (B935RC1Q027SBEA; $504.1B SAAR) shown separately; (c) the **computer import ratio**: Census HS 8471 imports for the quarter × 4 ÷ B935 (**109%** in Q3-26). The M1 limb itself is unchanged: it detects the rollover. If M1 fires, read it as "capex is rolling over" and size the GDP hit from the domestic pieces (software, plus construction and power, which are outside M1), not from the gross share. Equipment is almost wholly imported, so its fall is largely offset by lower imports (re-sizing: about −0.1 to −0.7pp of GDP direct, against −1.2pp gross).
 
 ## 3. Status ladder
 
@@ -29,9 +32,13 @@ The financing gates (Financing_Availability, HY-CREDIT-01, TW-VF-GUARANTEE-01) a
 - **ALERT:** two or more limbs fired within the same two-quarter window. Log a ledger entry and put to the author whether MACRO-TRANSMISSION-01 should get weight, and on which score. No automatic score change.
 - **Reset:** a limb clears when its series recovers to its baseline.
 
-## 4. Side indicator (not a limb)
+## 4. Side indicators (not limbs; they never fire)
 
-The rotation-vs-cash test (LE-2026-11-09-KRUGMAN annotation 3) is **RSP vs QQQ drawdown from peak** (Tiingo adjusted closes). It is noted on each read, but it does not fire. The 2026-11-06 reading was RSP −3.3% and QQQ −13.6% (rotation). If RSP falls by as much as QQQ, the selloff has become a move to cash, and the M3 limb is likely to follow.
+Both are noted on every limb read. Neither changes the status ladder.
+
+- **S1 Rotation vs cash** (LE-2026-11-09-KRUGMAN annotation 3): **RSP vs QQQ drawdown from peak** (Tiingo adjusted closes). The 2026-11-06 reading was RSP −3.3% and QQQ −13.6% (rotation). If RSP falls by as much as QQQ, the selloff has become a move to cash, and the M3 limb is likely to follow.
+- **S2 Debasement pricing** (added v0.2, LE-2026-11-10-FOOLMACRO annotation 2): FRED **T10YIE** (10-year breakeven inflation) and **T10Y2Y** (10-year minus 2-year Treasury). Baseline 2026-11-06: **breakeven 2.23%, 10s2s +35bp**. Year-end 2025: breakeven 2.25%, i.e. flat YTD. The 2026 rise in the 10-year has been real yield (DFII10 +73bp) with a flattening curve, i.e. Fed repricing. **Flag for the author** (no fire) when breakeven is **≥ 2.60%** and 10s2s is **≥ +60bp** (+25bp from baseline) on the same close. That pairing would mean the market has started pricing the "inflate the debt away" risk, not just a Fed response. The two thresholds were set by the session, not derived from data; the author may change them.
+- **S3 Hardware imports, monthly lead for M1** (added v0.3, LE-2026-11-10-L1IMPORTS annotation 2): Census imports of **HS 8471 + 8473** (computers and parts; `timeseries/intltrade/imports/hs`, GEN_VAL_MO, COMM_LVL=HS4), **3-month sum**. Baseline **$197.4B (Jul–Sep 2026)**; prior 3-month sums: $146.3B (Apr–Jun), $119.5B (Jan–Mar). **Flag for the author** (no fire) if the 3-month sum falls for two consecutive months. The data are not seasonally adjusted and include price changes, so also note the y/y change of the 3-month sum (Jul–Sep 2026: +124%). New months arrive about five weeks after month-end, ahead of GDP; Oct-26 is expected in early December (date not checked against the Census calendar).
 
 ## 5. Initial read (2026-11-09)
 
@@ -48,6 +55,7 @@ The rotation-vs-cash test (LE-2026-11-09-KRUGMAN annotation 3) is **RSP vs QQQ d
 - Registered as RESEARCH ONLY / ZERO WEIGHT. All AI Thesis scores unchanged; Composite SUSPENDED.
 - LE-2026-11-09-KRUGMAN annotation 1 → **APPLIED** (this entry). Annotations 2 (policy-space fact) and 3 (RSP/QQQ) are carried here as §4 and below:
   - **Policy-space reference:** fed funds (DFF) 3.88% on 2026-11-05 vs 6.54% (FEDFUNDS, Jul-00). Room to zero ≈ 3.9pp vs 5.5pp used in 2001–03.
+  - **Policy-direction note (added v0.2, LE-2026-11-10-FOOLMACRO annotation 1):** last FOMC move was **+25bp to 3.75–4.00% on 2026-09-17** (DFEDTARU); headline CPI **4.02% y/y (Sep-26)** (CPIAUCSL). An AI bust now would meet a Fed tightening against an energy-led inflation shock, so the usable room is less than the 3.9pp level implies. Refresh the CPI figure after each CPI release (Oct-26 CPI out 2026-11-10).
 - **DECISION: MONITOR ONLY / NO TRADE.**
 
 ## 7. Read schedule (added 2026-11-09)
@@ -63,3 +71,9 @@ Release dates come from the FRED release calendar (`release/dates`: release_id 5
 | Thu 2027-01-28 11:00 | M1 | GDP Q4-26 advance | trig_01BYweykrXQ68g2Bu8VZRXnz | **Date not yet on the calendar** (usual late-Jan slot). The task confirms the date and reschedules itself if it is wrong |
 
 **Not yet scheduled:** M2 for Dec-26 jobs (early Jan 2027) and M3 for Z.1 Q4-26 (~Mar 2027). Schedule them once they appear on the FRED calendar.
+
+## 8. Open leads (added v0.2)
+
+| ID | Question | Why it matters | Data | Status |
+|---|---|---|---|---|
+| **L1** Import leakage | How much of the Q3-26 goods-import surge is computer and semiconductor equipment? Goods imports (A255RC1Q027SBEA) went from $3.24T (Q4-25) to **$4.02T SAAR (Q3-26), +24%**, while customs duties fell from $367B to $275B | If the AI capex share (M1) is mostly imported, a capex unwind takes less off domestic GDP than the gross share suggests. Closes the open Krugman item (LE-2026-11-09-KRUGMAN §1, "NOT VERIFIED") | Census end-use / HS detail: 8471 (computers), 8473 (parts), 8542 (ICs), 8517 (network equipment), monthly, Q4-25 to Sep-26. Census API key is set in the environment; not yet tried | **CLOSED 2026-11-10 → LE-2026-11-10-L1IMPORTS.** Answer: yes. Chapters 84–85 are 70% of the import rise; computers and parts (8471 + 8473) went $111.5B → $197.4B a quarter. Finished-computer imports equal ~109% of NIPA computer investment, so equipment capex is almost wholly imported. Direct GDP hit of a capex unwind re-sized to about −0.1 to −0.7pp (vs −1.2pp gross). Both annotations proposed there were **applied 2026-11-10 (v0.3)**: M1 domestic-exposure line (§2) and side indicator S3 (§4) |
