@@ -101,8 +101,8 @@ Krugman's "Korea and Taiwan" is **PARTLY CONFIRMED**. Taiwan is the second-large
 - **L1 → CLOSED (answered).** MACRO-TRANSMISSION-01 v0.2 §8 updated to point here. The Krugman-entry item "large share of AI capex is imported" moves from NOT VERIFIED to **CONFIRMED** (origin mix partly confirmed, §2.3).
 - **No state change.** MACRO-TRANSMISSION-01 stays QUIET / ZERO WEIGHT; M1's definition is unchanged. Physical_AI_Demand 9 HELD. Composite SUSPENDED.
 - **Proposed annotations (author):**
-  1. **M1 net-of-imports note.** Keep the M1 limb as defined (it detects the rollover), but record alongside every M1 read a **domestic-exposure line**: software / GDP (B985 ÷ GDP; 2.52% in Q3-26) and the equipment import ratio from this entry. A fired M1 should be read as "capex is rolling over", with the GDP hit sized from the software and construction pieces, not from the gross share.
-  2. **Side indicator S3 (monthly lead for M1, no fire):** Census imports of HS 8471 + 8473, monthly, 3-month sum. Baseline **$197.4B (Jul–Sep 2026)**. Flag for the author if the 3-month sum falls for two consecutive months. Next data: Oct-26, expected in early December (date not checked against the Census calendar).
+  1. **[APPLIED 2026-11-10 → MACRO-TRANSMISSION-01 v0.3 §2]** **M1 net-of-imports note.** Keep the M1 limb as defined (it detects the rollover), but record alongside every M1 read a **domestic-exposure line**: software / GDP (B985 ÷ GDP; 2.52% in Q3-26) and the equipment import ratio from this entry. A fired M1 should be read as "capex is rolling over", with the GDP hit sized from the software and construction pieces, not from the gross share.
+  2. **[APPLIED 2026-11-10 → MACRO-TRANSMISSION-01 v0.3 §4, S3]** **Side indicator S3 (monthly lead for M1, no fire):** Census imports of HS 8471 + 8473, monthly, 3-month sum. Baseline **$197.4B (Jul–Sep 2026)**. Flag for the author if the 3-month sum falls for two consecutive months. Next data: Oct-26, expected in early December (date not checked against the Census calendar).
 - **DECISION: MONITOR ONLY / NO TRADE.**
 
 ## 5. Sources and method
